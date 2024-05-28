@@ -12,7 +12,7 @@ function addTodo() {
   var delBtn = document.createElement("button");
 var delText = document.createTextNode("DELETE");
 delBtn.setAttribute("class", "btn")
-delBtn.setAttribute("onclick", "deleteItem()")
+delBtn.setAttribute("onclick", "deleteItem(this)")
 delBtn.appendChild(delText);
 
 li.appendChild(delBtn)
@@ -23,6 +23,6 @@ li.appendChild(delBtn)
   console.log(li);
 }
  
-function deleteItem(){
-    console.log("han bhai chal raha hai.....")
+function deleteItem(e){
+    console.log(e)
 }
