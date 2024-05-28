@@ -20,9 +20,9 @@ li.appendChild(delBtn)
   list.appendChild(li);
 
   todo_item.vale = "";
-  console.log(li);
+ 
 }
  
 function deleteItem(e){
-    console.log(e)
+    console.log(e.parentNode)
 }
