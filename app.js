@@ -11,6 +11,8 @@ function addTodo() {
   // creat delt button
   var delBtn = document.createElement("button");
 var delText = document.createTextNode("DELETE");
+delBtn.setAttribute("class", "btn")
+delBtn.setAttribute("onclick", "deleteItem()")
 delBtn.appendChild(delText);
 
 li.appendChild(delBtn)
@@ -19,4 +21,8 @@ li.appendChild(delBtn)
 
   todo_item.vale = "";
   console.log(li);
+}
+ 
+function deleteItem(){
+    console.log("han bhai chal raha hai.....")
 }
