@@ -1,13 +1,22 @@
-var list = document.getElementById("list")
+var list = document.getElementById("list");
 
+function addTodo() {
+  var todo_item = document.getElementById("todo-item");
 
-function addTodo(){
-    var todo_item = document.getElementById("todo-item")
-    var li = document.createElement("li")
+  // creat li tag with crear node
+  var li = document.createElement("li");
+  var liText = document.createTextNode(todo_item.value);
+  li.appendChild(liText);
 
-var liText = document.createTextNode("shahzad")
+  // creat delt button
+  var delBtn = document.createElement("button");
+var delText = document.createTextNode("DELETE");
+delBtn.appendChild(delText);
 
-li.appendChild(liText)
+li.appendChild(delBtn)
 
-    console.log(li)
+  list.appendChild(li);
+
+  todo_item.vale = "";
+  console.log(li);
 }
