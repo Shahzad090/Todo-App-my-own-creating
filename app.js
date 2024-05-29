@@ -35,7 +35,9 @@ function deleteItem(e){
 }
 
 function editItem(e){
-console.log(e.parentNode.childNodes[0])
+  var val = prompt("Enter edit value",e.parentNode.firstChild.nodeValue)
+  e.parentNode.firstChild.nodeValue = val;
+
 }
 
 function deleteAll(){
