@@ -35,7 +35,7 @@ function deleteItem(e){
 }
 
 function editItem(e){
-console.log(e.parentNode.nodeValue)
+console.log(e.parentNode.childNodes[0])
 }
 
 function deleteAll(){
