@@ -15,7 +15,14 @@ delBtn.setAttribute("class", "btn")
 delBtn.setAttribute("onclick", "deleteItem(this)")
 delBtn.appendChild(delText);
 
+// creat edit button
+var editBtn = document.createElement("button")
+var editText = document.createTextNode("EDIT")
+editBtn.appendChild(editText)
+editBtn.setAttribute("onclick", "editItem(this)")
+
 li.appendChild(delBtn)
+li.appendChild(editBtn)
 
   list.appendChild(li);
 
@@ -24,5 +31,13 @@ li.appendChild(delBtn)
 }
  
 function deleteItem(e){
-    console.log(e.parentNode)
+    e.parentNode.remove()
+}
+
+function editItem(e){
+console.log(e.parentNode.nodeValue)
+}
+
+function deleteAll(){
+  list.innerHTML = ""
 }
