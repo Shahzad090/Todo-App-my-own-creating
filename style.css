@@ -13,3 +13,7 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    /* font-size: x-large; */
 }
+input {
+    background-color: rgb(235, 167, 167);
+    color: black;
+}
