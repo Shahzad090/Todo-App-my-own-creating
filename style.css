@@ -8,6 +8,7 @@ button {
     /* height: 20px; */
     background-color: bisque;
     font-size: small;
+    border-radius: 5%;
     
 }
 h1 {
